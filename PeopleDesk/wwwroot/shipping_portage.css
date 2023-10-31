@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul > li {
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* common class */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+.pr-5 {
+  padding-right: 5px;
+}
+.pl-5 {
+  padding-left: 5px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+
+/* header */
+.print-wrapper {
+  position: relative;
+  padding-bottom: 30px;
+}
+.header {
+  margin: 10px 15px 0;
+}
+h2.title {
+  font-size: 16px;
+  text-transform: uppercase;
+  max-width: 200px;
+  margin: 0 auto;
+}
+h4.address {
+  font-size: 10px;
+  max-width: 430px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* table */
+.shipping-table {
+  margin: 5px 0 0;
+}
+.table tr td {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 5px;
+  border: 1px solid #000;
+}
+.table tr td.border-transparent {
+  border: 0;
+}
+.table tr td.large-width {
+  width: 180px;
+}
+p.note,
+p.remarks {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+p.remarks {
+  text-transform: capitalize;
+}
+ul.remarks-list li {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+ul.remarks-list {
+  padding-bottom: 90px;
+}
+/* print-footer */
+.print-footer-wrapper {
+  border-bottom: 1px solid #000;
+}
+/* .print-footer {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  left: 0;
+} */
+
+@media print {
+  .table tr td.large-width {
+    width: 180px;
+  }
+}

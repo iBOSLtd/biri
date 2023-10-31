@@ -1,0 +1,33 @@
+﻿.promotion {
+    margin: 40px;
+}
+
+    .promotion .font-bold {
+        font-weight: 600;
+    }
+
+    .promotion table {
+        width: 100%;
+    }
+
+    .promotion .center-text {
+        text-align: center;
+    }
+
+
+
+    .promotion table,
+    thead,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        border-collapse: collapse;
+    }
+
+    .promotion thead {
+        font-weight: 600;
+    }
+
+    .promotion .signit {
+        margin-top: 80px;
+    }

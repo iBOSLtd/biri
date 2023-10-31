@@ -1,0 +1,102 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace PeopleDesk.Data.Entity
+{
+    public partial class PyrArearSalaryGenerateHeader
+    {
+        public long IntArearSalaryGenerateHeaderId { get; set; }
+        public long IntArearSalaryGenerateRequestId { get; set; }
+        public long IntSalaryPolicyId { get; set; }
+        public string StrSalaryPolicyName { get; set; }
+        public long IntEmployeeId { get; set; }
+        public string StrEmployeeCode { get; set; }
+        public string StrEmployeeName { get; set; }
+        public long? IntEmploymentTypeId { get; set; }
+        public string StrEmploymentType { get; set; }
+        public int? IntEmployeeStatusId { get; set; }
+        public string StrEmployeeStatus { get; set; }
+        public long? IntDepartmentId { get; set; }
+        public string StrDepartment { get; set; }
+        public long? IntDesignationId { get; set; }
+        public string StrDesignation { get; set; }
+        public DateTime? DteJoiningDate { get; set; }
+        public string StrServiceLength { get; set; }
+        public string StrOfficialEmail { get; set; }
+        public string StrContactNumber { get; set; }
+        public DateTime? DteDateOfBirth { get; set; }
+        public string StrAge { get; set; }
+        public DateTime? DteSalaryGenerateFor { get; set; }
+        public string StrAccountName { get; set; }
+        public string StrPaymentBankType { get; set; }
+        public long? IntFinancialInstitutionId { get; set; }
+        public string StrFinancialInstitution { get; set; }
+        public long? IntBankBranchId { get; set; }
+        public string StrBankBranchName { get; set; }
+        public string StrRoutingNumber { get; set; }
+        public string StrAccountNo { get; set; }
+        public int IntTotalWorkingDays { get; set; }
+        public int IntPayableDays { get; set; }
+        public int IntPresent { get; set; }
+        public int IntAbsent { get; set; }
+        public int IntLate { get; set; }
+        public int IntOffDay { get; set; }
+        public int IntHoliday { get; set; }
+        public int IntMovement { get; set; }
+        public int IntCasualLeave { get; set; }
+        public int IntEarnLeave { get; set; }
+        public int IntSickLeave { get; set; }
+        public int IntMaternityLeave { get; set; }
+        public int IntSpecialLeave { get; set; }
+        public int IntAnnualLeave { get; set; }
+        public int IntLwp { get; set; }
+        public int IntPrivilegeLeave { get; set; }
+        public int IntOthersLeave { get; set; }
+        public decimal NumPerDaySalary { get; set; }
+        public decimal? NumPayableSalaryCal { get; set; }
+        public decimal NumGrossSalary { get; set; }
+        public decimal NumOverTimeHour { get; set; }
+        public decimal NumOverTimeAmount { get; set; }
+        public decimal NumLoanAmount { get; set; }
+        public int IntMonthId { get; set; }
+        public int IntYearId { get; set; }
+        public int IntAccountId { get; set; }
+        public int IntBusinessUnitId { get; set; }
+        public string StrBusinessUnitName { get; set; }
+        public int? IntWorkplaceGroupId { get; set; }
+        public string StrWorkplaceGroupName { get; set; }
+        public long? IntWorkplaceId { get; set; }
+        public string StrWorkplaceName { get; set; }
+        public int? IntPayrollGroupId { get; set; }
+        public string StrPayrollGroupName { get; set; }
+        public int? IntPayrollPeriodId { get; set; }
+        public string StrPayrollPeriod { get; set; }
+        public DateTime? DtePayrollGenerateFrom { get; set; }
+        public DateTime? DtePayrollGenerateTo { get; set; }
+        public DateTime? DtePayrollGenerateDateTime { get; set; }
+        public int? IntGradeId { get; set; }
+        public string StrGrade { get; set; }
+        public int? IntSlaveId { get; set; }
+        public string StrSlave { get; set; }
+        public decimal NumLowerLimit { get; set; }
+        public decimal NumUpperLimit { get; set; }
+        public decimal NumManualSalaryAddition { get; set; }
+        public decimal NumManualSalaryDeduction { get; set; }
+        public string IntManualSalaryAdjustmentBy { get; set; }
+        public DateTime? DteManualSalaryAdjustmentDateTime { get; set; }
+        public bool? IsActive { get; set; }
+        public bool? IsApprove { get; set; }
+        public string StrSalaryApprovedByUser { get; set; }
+        public DateTime? DteSalaryApprovedDateTime { get; set; }
+        public bool? IsReject { get; set; }
+        public string StrSalaryRejectByUser { get; set; }
+        public DateTime? DteSalaryRejectDateTime { get; set; }
+        public bool IsPerday { get; set; }
+        public bool IsTakeHomePay { get; set; }
+        public decimal NumTaxAmount { get; set; }
+        public decimal NumPfamount { get; set; }
+        public decimal NumPfcompany { get; set; }
+        public decimal NumTotalAllowance { get; set; }
+        public decimal NumTotalDeduction { get; set; }
+    }
+}

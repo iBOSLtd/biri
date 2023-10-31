@@ -1,0 +1,22 @@
+.report-header {
+  text-align: center;
+}
+.report-header h5,
+h6 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.report-body table,
+th,
+td {
+  font-size: 12px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table-head {
+  font-weight: bold;
+}
+.report-footer {
+  margin-top: 70px;
+}

@@ -1,0 +1,299 @@
+.print-page-main-body .clearfix {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+}
+
+.print-page-main-body {
+    min-height: 868px;
+    position: relative;
+}
+
+    .print-page-main-body .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .print-page-main-body .company-info {
+        float: left;
+        width: 70% !important;
+    }
+
+    .print-page-main-body .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .print-page-main-body .company-info .companyName .companyImg {
+        /* border       : 1px solid red; */
+        padding-top: 10px;
+        border-radius: 50%;
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+
+
+    .print-page-main-body .company-social-info {
+        float: right;
+    }
+
+        .print-page-main-body .company-social-info p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            /*line-height: 12px;*/
+            text-align: right;
+            margin-top: 4px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+    .print-page-main-body .company-info .companyTitle {
+        float: left;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        /* line-height   : 14px; */
+        margin-left: 10px;
+        color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+        vertical-align: middle;
+        width: 70% !important;
+    }
+
+    .print-page-main-body .company-info .companyImg {
+        float: left;
+    }
+
+    .print-page-main-body .company-info .companyAddress {
+        float: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        /*line-height: 14px;*/
+        /* or 140% */
+
+        margin-top: 4px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+.footer_table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border: none;
+    border-spacing: 30px;
+}
+
+
+
+    .footer_table tbody tr td {
+        border-left: 1px solid white !important;
+        border-right: 1px solid white !important;
+        border-bottom: 1px solid white !important;
+        border-top: 1px solid grey !important;
+        text-align: center;
+        font-weight: normal;
+        font-size: 14px;
+        /*line-height: 12px;*/
+        /* identical to box height */
+
+        margin-top: 4px;
+        padding-top: 10px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+        .footer_table tbody tr td.authorName {
+            width: 33%;
+        }
+
+.print-page-main-body .footer {
+    position: absolute;
+    /* height                   : 50px; */
+    /* padding-top              : 100px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    .print-page-main-body .footer.dbl_page {
+        position: relative !important;
+        /* height                   : 50px; */
+        padding-top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* .print-page-main-body .footer .signDiv {
+  float: left;
+} */
+    .print-page-main-body .footer .footerDiv {
+        /* position: ; */
+    }
+
+    .print-page-main-body .footer .signerDiv {
+        width: 80vw;
+        border: 1px solid red;
+    }
+
+    .print-page-main-body .footer .signDiv {
+        float: left;
+        width: 32%;
+        padding-right: 17px;
+        margin-bottom: 20px;
+    }
+
+        .print-page-main-body .footer .signDiv .signImg {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        .print-page-main-body .footer .signDiv .signAuthor {
+            font-weight: normal;
+            font-size: 10px;
+            /*line-height: 12px;*/
+            /* identical to box height */
+
+            margin-top: 4px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+    .print-page-main-body .footer .footerNote {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        /*line-height: 16px;*/
+        /* identical to box height, or 160% */
+        float: left;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+.print-page-main-body .main-report-body .body_main_table .table_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    /*line-height: 12px;*/
+    margin: 0px 0 20px 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* ----------------Main-table-bdy---------- */
+.body_main_table table,
+td,
+th {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    /* text-align: center; */
+}
+
+.body_main_table {
+    padding: 20px;
+}
+
+    .body_main_table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .body_main_table table tr td.rotate {
+            writing-mode: vertical-rl;
+            transform: rotate(-180deg);
+            /* height                     : 100px; */
+            /* display                    : inline-block; */
+            /* white-space                : nowrap; */
+        }
+
+@media print {
+    .body_main_table table tr td.rotate {
+        writing-mode: vertical-rl;
+        transform: rotate(-90deg);
+        /* height                     : 100px; */
+        /* display                    : inline-block; */
+        /* white-space                : nowrap; */
+    }
+}
+
+.body_main_table table .header {
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.body_main_table table tr td {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.body_main_table table {
+    border-top: 1px solid black !important;
+    /* border-bottom: 1px solid black !important; */
+}
+
+.main_header {
+    border-right: 1px solid black !important;
+    border-left: 1px solid black !important;
+}
+
+.numbering_tr td {
+    text-align: center;
+    border-top: none !important;
+}
+
+.numbering_tr {
+    border-top: none !important;
+}
+
+
+.signture_td {
+    width: 150px;
+}
+
+.signature {
+    height: 100px;
+}
+
+@media print {
+    .signture_td {
+        width: 200px;
+    }
+}
+
+.print-page-main-body .main-report-body .body_main_table table thead tr th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    /*line-height: 11px;*/
+    /* identical to box height */
+    border: none;
+    padding: 5px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.print-page-main-body .main-report-body .body_main_table table tbody tr td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    /*line-height: 12px;*/
+    /* identical to box height */
+    /* text-align    : center; */
+    padding: 5px;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+
+.print-page-main-body .main-report-body .body_main_table table tbody tr:last-child td,
+.print-page-main-body .main-report-body .body_main_table table tbody tr:first-child td,
+.print-page-main-body .main-report-body .body_main_table table tbody tr:nth-child(2) td,
+.print-page-main-body .main-report-body .body_main_table table tbody tr:nth-child(3) td {
+    border-bottom: 1px solid black
+}

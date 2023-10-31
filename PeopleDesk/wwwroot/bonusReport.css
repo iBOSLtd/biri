@@ -1,0 +1,47 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.width_100 {
+    width: 100%;
+}
+
+.bold_font {
+    font-weight: 700;
+}
+
+.font_18 {
+    font-size: 15px;
+}
+.font_td {
+    font-size: 15px;
+}
+
+.text_underlined {
+    text-decoration: underline;
+}
+
+.mt_8 {
+    margin-top: 8px;
+}
+
+.mt_16 {
+    margin-top: 16px;
+}
+
+.mt_26 {
+    margin-top: 26px;
+}
+
+.bonusGen table,
+.bonusGen td,
+.bonusGen th {
+    border: 1px solid black;
+    padding: 2px 5px 2px 5px;
+    border-collapse: collapse;
+}

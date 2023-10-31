@@ -1,0 +1,25 @@
+.transfer {
+  margin: 40px;
+}
+.transfer .font-bold {
+  font-weight: 600;
+}
+.transfer table {
+  width: 100%;
+}
+
+.transfer table,
+thead,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  border-collapse: collapse;
+}
+
+.transfer thead{
+    font-weight: 600;
+}
+
+.transfer .signit{
+    margin-top: 80px;
+}

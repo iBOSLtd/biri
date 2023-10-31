@@ -1,0 +1,144 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<!--<Nullable>enable</Nullable>-->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>77c49444-a3bf-490f-a34f-4dfac23f28ca</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Reports\Rdlc\MonthlyAttendanceReport.rdlc" />
+	  <None Remove="Reports\Rdlc\SalaryAssignLandingForHO.rdlc" />
+	  <None Remove="Reports\Rdlc\SalaryAssignLandingForHOExcel.rdlc" />
+	  <None Remove="Reports\Rdlc\SalaryAssignLandingForM.rdlc" />
+	  <None Remove="Reports\Rdlc\SalaryAssignLandingForMExcel.rdlc" />
+	  <None Remove="Reports\Rdlc\SalaryDetailsLanding.rdlc" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<_ContentIncludedByDefault Remove="wwwroot\PromotionLetter.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Reports\Rdlc\MonthlyAttendanceReport.rdlc">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Reports\Rdlc\SalaryAssignLandingForHOExcel.rdlc">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Reports\Rdlc\SalaryAssignLandingForMExcel.rdlc">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Reports\Rdlc\SalaryAssignLandingForM.rdlc">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Reports\Rdlc\SalaryAssignLandingForHO.rdlc">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Reports\Rdlc\SalaryDetailsLanding.rdlc">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
+		<PackageReference Include="ClosedXML" Version="0.95.4" />
+		<PackageReference Include="LanguageExt.Core" Version="4.2.2" />
+		<PackageReference Include="CorePush" Version="3.1.1" />
+		<PackageReference Include="Dapper" Version="2.0.123" />
+		<PackageReference Include="DinkToPdf" Version="1.0.8" />
+		<PackageReference Include="Elastic.Apm.NetCoreAll" Version="1.18.0" />
+		<PackageReference Include="Haukcode.DinkToPdf" Version="1.1.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.6.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.6.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.0" />
+		<PackageReference Include="NCrontab.Signed" Version="3.3.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+		<PackageReference Include="NodaTime" Version="3.1.0" />
+		<PackageReference Include="Quartz.AspNetCore" Version="3.5.0" />
+		<PackageReference Include="ReportViewerCore.NETCore" Version="15.1.17" />
+		<PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+		<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.2" />
+		<PackageReference Include="WatchDog.NET" Version="1.3.3" />
+		<PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+    
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="PeopleDeskAkijBiriDataSet.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>PeopleDeskAkijBiriDataSet.xsd</DependentUpon>
+	  </Compile>
+	  <Compile Update="PeopleDeskAkijBiriDataSet1.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>PeopleDeskAkijBiriDataSet1.xsd</DependentUpon>
+	  </Compile>
+	  <Compile Update="PeopleDeskAkijBiriDataSet2.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>PeopleDeskAkijBiriDataSet2.xsd</DependentUpon>
+	  </Compile>
+	  <Compile Update="Reports\DS\LocalSource.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>LocalSource.xsd</DependentUpon>
+	  </Compile>
+	  <Compile Update="Reports\DS\PeopleDeskAkijBiriDataSet.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>PeopleDeskAkijBiriDataSet.xsd</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="PeopleDeskAkijBiriDataSet.xsd">
+	    <Generator>MSDataSetGenerator</Generator>
+	    <LastGenOutput>PeopleDeskAkijBiriDataSet.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="PeopleDeskAkijBiriDataSet1.xsd">
+	    <Generator>MSDataSetGenerator</Generator>
+	    <LastGenOutput>PeopleDeskAkijBiriDataSet1.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="PeopleDeskAkijBiriDataSet2.xsd">
+	    <Generator>MSDataSetGenerator</Generator>
+	    <LastGenOutput>PeopleDeskAkijBiriDataSet2.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="Reports\DS\LocalSource.xsd">
+	    <Generator>MSDataSetGenerator</Generator>
+	    <LastGenOutput>LocalSource.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="Reports\DS\PeopleDeskAkijBiriDataSet.xsd">
+	    <Generator>MSDataSetGenerator</Generator>
+	    <LastGenOutput>PeopleDeskAkijBiriDataSet.Designer.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Reports\Model\" />
+	</ItemGroup>
+
+</Project>

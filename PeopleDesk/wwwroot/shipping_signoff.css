@@ -1,0 +1,61 @@
+.report-header {
+  border: 1px solid black;
+  position: relative;
+}
+.report-header h1 {
+  text-align: center;
+  padding: 18px;
+}
+.report-header img {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  width: 80px;
+  height: 80px;
+  opacity: 0.6;
+}
+
+.report-table {
+  position: relative;
+  z-index: 1;
+}
+
+.report-table img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.report-title {
+  text-align: center;
+}
+.report-title h1 {
+  /* text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline; */
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  /* text-decoration: underline; */
+}
+
+table {
+  width: 100%;
+}
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding-left: 10px;
+}

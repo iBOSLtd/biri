@@ -1,0 +1,119 @@
+﻿.header {
+    border: 1px solid black;
+    position: relative;
+}
+
+    .header h2 {
+        text-align: center;
+        padding: 18px;
+        text-transform: uppercase;
+    }
+
+    .header img {
+        position: absolute;
+        right: 40px;
+        top: 10px;
+        width: 80px;
+        height: 80px;
+        opacity: 0.6;
+    }
+
+.subtilte h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.report-body {
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+}
+
+.port-body {
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.report-body img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.report-body .border-bottom {
+    border-bottom: 1px solid black;
+    width: 100px;
+}
+
+.faithfully {
+    text-align: center;
+}
+
+.master {
+    text-align: center;
+    display: inline-block;
+    border-top: 1px solid black;
+}
+
+.middle-part {
+    border: 1px solid black;
+    margin: 1px;
+}
+
+    .middle-part h4 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+.doctor-report::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.doctor-report .box {
+    float: left;
+    width: 49.2%;
+    min-height: 80px;
+    margin: 1px;
+    border: 1px solid black;
+}
+
+.footer-signature {
+    border: 1px solid black;
+    margin: 1px;
+    padding-top: 80px;
+}
+
+    .footer-signature table tr td span {
+        border-top: 1px solid black;
+    }
+
+.note {
+    border: 1px solid black;
+    margin: 1px;
+    padding: 15px 1px;
+}
+
+    .note h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+.footer-bottom {
+    margin: 1px;
+}
+
+    .footer-bottom table tbody tr td {
+        border: 1px solid black;
+    }
+
+.report-footer {
+    border-top: 3px solid #ccc;
+    margin-top: 50px;
+}

@@ -1,0 +1,130 @@
+body {
+  font-size: 14px;
+}
+
+.print-page-main-body .clearfix {
+  /* padding: 20px; */
+  padding-top: 0;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.12); */
+}
+
+.print-page-main-body {
+  min-height: 960px;
+  position: relative;
+}
+
+.print-page-main-body .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.print-page-main-body .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.print-page-main-body .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.print-page-main-body .footer.dbl_page {
+  position: relative !important;
+  /* height                   : 50px; */
+  padding-top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.print-page-main-body .footer .signerDiv {
+  width: 80vw;
+  border: 1px solid red;
+}
+
+.print-page-main-body .footer .signDiv {
+  float: left;
+  width: 32%;
+  padding-right: 17px;
+  margin-bottom: 20px;
+}
+
+.print-page-main-body .footer .signDiv .signImg {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.print-page-main-body .footer .signDiv .signAuthor {
+  font-weight: normal;
+  font-size: 10px;
+  margin-top: 4px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.print-page-main-body .footer .footerNote {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  float: left;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.big_td {
+  width: 108px;
+}
+
+/* __________________________Main-Body_______________________________ */
+
+.header {
+  border: 1px solid black;
+  position: relative;
+}
+.header h2 {
+  text-align: center;
+  /* padding-bottom: 60px; */
+  padding: 18px;
+}
+.header img {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  width: 80px;
+  height: 80px;
+  opacity: 0.6;
+}
+
+.main {
+  padding: 5px;
+}
+.main .text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: 500;
+}
+.main table {
+  width: 100%;
+}
+
+.main table,
+.main th,
+.main td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.main th,
+.main td {
+  padding: 1px;
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+.increment {
+   margin: 30px;
+}
+
+   .increment .font-bold {
+      font-weight: 600;
+   }
+
+   .increment table {
+      width: 100%;
+   }
+
+   .increment .center-text {
+      text-align: center;
+   }
+
+   .increment.inside-table {
+      padding: 0 !important;
+   }
+
+.table_section_container table,
+thead,
+td {
+   border: 1px solid black;
+   padding: 5px;
+   border-collapse: collapse;
+}
+
+.increment thead {
+   font-weight: 600;
+}
+
+.increment .signit {
+   margin-top: 80px;
+}
+
+.table_section_container table {
+   float: left;
+   width: 50%;
+}
+
+   .table_section_container table.table__1 {
+      border-left: 0px;
+   }
+
+table + table thead,
+table + table tr th,
+table + table tr td {
+   border-left: 0px;
+}

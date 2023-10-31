@@ -1,0 +1,24 @@
+.report-header{
+  width: 100%; 
+}
+.report-header table{
+  margin: 0 auto;
+}
+.report-header h5,h6{
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.report-body table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* print-footer */
+.print-footer-wrapper {
+  border-bottom: 1px solid #000;
+}
+.report-footer{
+  display: flex;
+  margin-top: 20px;
+}
